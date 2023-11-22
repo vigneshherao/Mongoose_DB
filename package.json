@@ -1,0 +1,23 @@
+{
+  "name": "mongoose_db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshherao/Mongoose_DB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigneshherao/Mongoose_DB/issues"
+  },
+  "homepage": "https://github.com/vigneshherao/Mongoose_DB#readme",
+  "dependencies": {
+    "mongoose": "^8.0.1"
+  }
+}
