@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% for(data of chats) { %>
+        <div class="post">
+            <h5>From : <%= data.from %></h5>
+            <p><i>Message : </i><%= data.message %></p>
+            <h5>To : <%= data.to %></h5>
+        </div>
+        <hr>
+    <% } %>
+</body>
+</html>
