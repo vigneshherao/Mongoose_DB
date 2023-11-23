@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <% for(data of chats) { %>
-        <div class="post">
-            <h5>From : <%= data.from %></h5>
-            <p><i>Message : </i><%= data.message %></p>
-            <h5>To : <%= data.to %></h5>
-        </div>
-        <hr>
-    <% } %>
+    <button><a href="http://localhost:8080/new/chat">Create a New Chat</a></button>
+    <div class="message">
+        <% for(data of chats) { %>
+            <div class="post">
+                <h5>From : <%= data.from %></h5>
+                <p><i>Message : </i><%= data.message %></p>
+                <h5>To : <%= data.to %></h5>
+                <hr>
+                <h6><%= data.createdBy.toString().split(" ")[4] %></h6>
+                <h6><%= data.createdBy.toString().split(" ").slice(0,4).join(" ") %></h6>
+                <hr>
+                <a href="http://localhost:8080/chat/edit/<%=data._id%>">Edit</a>
+                <form method="post" action="/chat/<%=data._id%>?_method=DELETE">
+                    <button>delete</button>
+
+                </form>
+                <br>
+            </div>
+            <hr>
+        <% } %>
+    </div>
 </body>
 </html>

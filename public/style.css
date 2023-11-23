@@ -1,0 +1,27 @@
+.post{
+    display: inline-block;
+    background-color: lightblue;
+}
+p{
+    background-color: blue;
+    color: white;
+
+}
+.message{
+    margin-top: 50px;
+}
+button{
+    background-color: greenyellow;
+
+}
+button a{
+    color: rgb(251, 30, 30);
+    text-decoration: none;
+    font-weight: 700;
+}
+.sendMessage{
+    margin:100px auto;
+    background-color: aqua;
+    text-align: center;
+
+}
